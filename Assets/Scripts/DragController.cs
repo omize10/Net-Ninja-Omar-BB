@@ -8,4 +8,6 @@ public class DragController : MonoBehaviour
     public LineRenderer line;
     public Rigidbody2D rb;
 
+    public float 
+
 }
