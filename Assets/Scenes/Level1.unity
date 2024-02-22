@@ -1821,9 +1821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f48d1de1da42b4d84cf076518b91c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basketball: {fileID: 1373740050}
   scoreText: {fileID: 708814811}
-  scoreArea: {fileID: 1581579099}
   Scorecount: 0
 --- !u!1 &1589592687
 GameObject:
@@ -2177,7 +2175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a922ae3b4bde2004fad3fad32c69b46e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 7
+  totalTime: 15
   timerText: {fileID: 1243169503}
 --- !u!1 &2015181799
 GameObject:

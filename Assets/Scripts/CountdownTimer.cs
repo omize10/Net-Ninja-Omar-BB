@@ -67,7 +67,7 @@ public class CountdownTimer : MonoBehaviour
             Debug.Log("Time's up!");
 
             // Load a new scene (replace "YourSceneName" with your actual scene name)
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Gameover");
         }
     }
 
