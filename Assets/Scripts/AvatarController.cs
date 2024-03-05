@@ -1,6 +1,8 @@
-using UnityEngine;
 
-public class AvatarController : MonoBehaviour
+
+//using UnityEngine;
+
+/*public class AvatarController : MonoBehaviour
 {
     public Sprite[] jerseySprites; // Array to hold different jersey sprites
     private SpriteRenderer spriteRenderer;
@@ -39,3 +41,5 @@ public class AvatarController : MonoBehaviour
         ChangeJersey(newJerseyIndex); // Change the avatar's jersey to the newly unlocked one
     }
 }
+
+*/

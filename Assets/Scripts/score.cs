@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement; // Required for scene management
 
+
 public class score : MonoBehaviour
 {
     public Text scoreText; // Reference to the UI Text component displaying the score
     public int Scorecount = 0; // Initialize the score to zero
+    public GameObject hoop;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,13 +17,17 @@ public class score : MonoBehaviour
         {
             Scorecount++; // Increment the score
             scoreText.text = Scorecount.ToString(); // Update the UI text with the new score
-
+            
             // Check if the player has reached the required points for level completion
             if (Scorecount >= 2)
             {
                 // Load the level completion scene //(replace with your actual scene name)
-               SceneManager.LoadScene(5);
+                SceneManager.LoadScene(5);
+
+               
             }
+
+            Destroy(hoop);
         }
     }
 }
