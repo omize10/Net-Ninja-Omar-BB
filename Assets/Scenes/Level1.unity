@@ -2129,8 +2129,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 708814811}
-  hoopTag: Hoop
-  hoopsRequired: 2
+  hoopsRequired: 1
+  hoop: {fileID: 1589592687}
 --- !u!1 &1589592687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,7 +2653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2131164719}
   - component: {fileID: 2131164721}
-  - component: {fileID: 2131164720}
+  - component: {fileID: 2131164722}
   m_Layer: 0
   m_Name: Score Colldier
   m_TagString: Untagged
@@ -2676,21 +2676,6 @@ Transform:
   m_Father: {fileID: 1248944316}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2131164720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131164718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e92201712e328448be72cedb6aed754, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 708814811}
-  hoopTag: Hoop
-  hoopsRequired: 2
 --- !u!61 &2131164721
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2717,3 +2702,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3544507, y: 0.5085912}
   m_EdgeRadius: 0
+--- !u!114 &2131164722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131164718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde62e328914c7c46bd3e59a22934864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 708814811}
+  hoopsRequired: 2
+  hoop: {fileID: 1248944312}
