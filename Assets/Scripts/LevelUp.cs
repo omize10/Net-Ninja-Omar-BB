@@ -8,6 +8,6 @@ public class LevelUp : MonoBehaviour
     public void ReplayGame()
     {
         // Load the main scene (assuming it's at build index 0)
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 }

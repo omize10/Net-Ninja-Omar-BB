@@ -7,6 +7,6 @@ public class Play : MonoBehaviour
     public void ReplayGame()
     {
         // Load the main scene (assuming it's at build index 0)
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Level1");
     }
 }
