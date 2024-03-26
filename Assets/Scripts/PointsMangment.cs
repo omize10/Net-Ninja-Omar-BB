@@ -9,6 +9,7 @@ public class PointsMangment : MonoBehaviour
 {
     private int previousHighScore;
     public Text highScoreText;  // Reference to a Text component to display the high score
+   
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,7 @@ public class PointsMangment : MonoBehaviour
     public void UpdateHighScore(int currentLevel)
     {
         // update the score text
-
+        highScoreText.text = "HighScore" + previousHighScore.ToString();
     }
     void Update()
     {

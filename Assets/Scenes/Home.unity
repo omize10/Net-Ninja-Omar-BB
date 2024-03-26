@@ -494,7 +494,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -638,7 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c64de294fdabe94583b59805d2cc2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highScoreText: {fileID: 0}
+  highScoreText: {fileID: 1039839630}
 --- !u!4 &804179664
 Transform:
   m_ObjectHideFlags: 0
