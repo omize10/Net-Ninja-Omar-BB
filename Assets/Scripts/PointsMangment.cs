@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 // ******* every time you beat your highscore you unlcok new backgound *******!!!!!!!!!!!!!!
@@ -16,13 +18,13 @@ public class PointsMangment : MonoBehaviour
     {
         // Load the previous high score from PlayerPrefs
         previousHighScore = PlayerPrefs.GetInt("HighScore", 0);
-        //UpdateHighScoreText();
+        UpdateHighScoreText();
     }
 
-    public void UpdateHighScore(int currentLevel)
+    public void UpdateHighScoreText()
     {
         // update the score text
-        highScoreText.text = "HighScore" + previousHighScore.ToString();
+        highScoreText.text = previousHighScore.ToString();
     }
     void Update()
     {
