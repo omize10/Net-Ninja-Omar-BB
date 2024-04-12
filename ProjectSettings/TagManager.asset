@@ -9,6 +9,7 @@ TagManager:
   - Hoop
   - Score
   - star
+  - EquipArry
   layers:
   - Default
   - TransparentFX
