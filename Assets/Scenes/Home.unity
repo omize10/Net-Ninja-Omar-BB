@@ -574,7 +574,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1324,7 +1323,7 @@ GameObject:
   - component: {fileID: 1296934011}
   - component: {fileID: 1296934014}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

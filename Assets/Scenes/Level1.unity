@@ -921,7 +921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &600083771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2381,7 +2381,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -2506,7 +2505,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -3517,6 +3515,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6231364446681126833, guid: 14f91c9a040517146a4bde2fbfccba2c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fcaf714f92670484fbafe6634ae11532, type: 3}
     - target: {fileID: 6231364446681126834, guid: 14f91c9a040517146a4bde2fbfccba2c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3573,5 +3575,13 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 708814811}
+    - target: {fileID: 6231364446681126844, guid: 14f91c9a040517146a4bde2fbfccba2c, type: 3}
+      propertyPath: hasHappened
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231364446681126844, guid: 14f91c9a040517146a4bde2fbfccba2c, type: 3}
+      propertyPath: hoopsRequired
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f91c9a040517146a4bde2fbfccba2c, type: 3}

@@ -351,7 +351,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67611994}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -862,7 +862,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1011,20 +1010,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1691852556}
+  - {fileID: 1589448434}
+  - {fileID: 21992907}
+  - {fileID: 797636914}
+  - {fileID: 1337208851}
+  - {fileID: 857945826}
+  - {fileID: 2075793465}
+  - {fileID: 1656597493}
+  - {fileID: 1917935404}
+  - {fileID: 87444957}
   - {fileID: 0}
   - {fileID: 0}
   HM2: {fileID: 0}
-  amountOfBallsUnlocked: 0
+  amountOfBallsUnlocked: 1
 --- !u!4 &703211297
 Transform:
   m_ObjectHideFlags: 0
@@ -2931,7 +2930,7 @@ GameObject:
   m_Layer: 5
   m_Name: BackgroudButton (9)
   m_TagString: EquipArry
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0

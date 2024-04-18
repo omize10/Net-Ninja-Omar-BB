@@ -16,14 +16,14 @@ public class BallSeter : MonoBehaviour
     void Start()
     {
         HM2 = GameObject.Find("ball").GetComponent<HoopManger2>();
-        buttons = GameObject.FindGameObjectsWithTag("EquipArry");
+        //buttons = GameObject.FindGameObjectsWithTag("EquipArry");
         amountOfBallsUnlocked += 1;
     }
 
 
     void Update()
     {
-        if (HM2.hasHappened == true)
+        if (HM2.hasHappened = true)
         {
             GameObject currentButton = buttons[amountOfBallsUnlocked];
             currentButton.SetActive(true);
