@@ -862,6 +862,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1020,10 +1021,10 @@ MonoBehaviour:
   - {fileID: 1656597493}
   - {fileID: 1917935404}
   - {fileID: 87444957}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 67611994}
+  - {fileID: 1027381127}
   HM2: {fileID: 0}
-  amountOfBallsUnlocked: 1
+  amountOfBallsUnlocked: 0
 --- !u!4 &703211297
 Transform:
   m_ObjectHideFlags: 0

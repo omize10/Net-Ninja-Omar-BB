@@ -46,17 +46,15 @@ public class HoopManger2 : MonoBehaviour
             if (currentScore >= hoopsRequired)
             {
 
-                
-                
-                if (SceneManager.GetActiveScene().buildIndex > previousHighScore)
+
+                int currentHighScore = SceneManager.GetActiveScene().buildIndex - 7;
+                if (currentHighScore > previousHighScore)
                 {
-                    previousHighScore = SceneManager.GetActiveScene().buildIndex - 7;
-                    
-                    PlayerPrefs.SetInt("HighScore", previousHighScore);
+                    PlayerPrefs.SetInt("HighScore", currentHighScore);
                     PlayerPrefs.Save();
 
                     IMG.SetActive(true);
-                    Invoke("wait", 100f);
+                    Invoke("wait", 300f);
 
 
                     hasHappened = true; 
@@ -65,7 +63,7 @@ public class HoopManger2 : MonoBehaviour
                     
 
                 }
-                SceneManager.LoadScene("LevelUp#1");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
     }
