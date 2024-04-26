@@ -7,13 +7,14 @@ public class HoopKiller : MonoBehaviour
 
     void Start()
     {
-
+        
     }
 
 
     void Update()
     {
-
+        //finds all of gameobjects tagged ball
+        // 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

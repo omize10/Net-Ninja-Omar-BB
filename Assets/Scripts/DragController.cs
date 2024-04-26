@@ -13,7 +13,7 @@ public class DragController : MonoBehaviour
 
     private Camera cam;
     private bool isDragging;
-
+    
     Vector3 MousePosition
     {
         get
@@ -32,6 +32,9 @@ public class DragController : MonoBehaviour
         line.SetPosition(0, Vector2.zero);
         line.SetPosition(1, Vector2.zero);
         line.enabled = false;
+        //GameObject ball =  GameObject.FindGameObjectWithTag("ball");
+       // rb = ball.GetComponent<Rigidbody2D>();
+
     }
 
 

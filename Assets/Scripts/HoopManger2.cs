@@ -7,13 +7,13 @@ public class HoopManger2 : MonoBehaviour
     public Text scoreText;
     public GameObject IMG;
 
-    public int hoopsRequired = 3; 
+    public int hoopsRequired = 3;
     //public GameObject hoop;
     private int currentScore = 0;
     private int previousHighScore;
 
     public bool hasHappened;
-    
+
     void wait()
     {
         IMG.SetActive(false);
@@ -21,6 +21,7 @@ public class HoopManger2 : MonoBehaviour
 
     private void Awake()
     {
+        // if (// not in destroy ball scene)
         DontDestroyOnLoad(this.gameObject);
     }
 
@@ -29,42 +30,41 @@ public class HoopManger2 : MonoBehaviour
         //PlayerPrefs.SetInt("HighScore", 0);//DELETE THIS LINE AFTER RESETTING HIGH SCORE
         previousHighScore = PlayerPrefs.GetInt("HighScore", 0);
 
-        
+
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    //private void Update()
+    // {
+    //if (transform.position.y < -6.5)
+    // {
+    //  Destroy(gameObject);
+    // }
+    //}
+   public void highscoreUpdate()
     {
+        //Destroy(collision.gameObject); // Destroy the hoop itself
+
+        if (currentScore >= hoopsRequired)
+        {
 
 
-        if (collision.CompareTag("Score"))
-        { 
-
-            currentScore++;
-            scoreText.text = "Score: " + currentScore;
-
-            //Destroy(collision.gameObject); // Destroy the hoop itself
-
-            if (currentScore >= hoopsRequired)
+            int currentHighScore = SceneManager.GetActiveScene().buildIndex - 7;
+            if (currentHighScore > previousHighScore)
             {
+                PlayerPrefs.SetInt("HighScore", currentHighScore);
+                PlayerPrefs.Save();
+
+                IMG.SetActive(true);
+                Invoke("wait", 300f);
 
 
-                int currentHighScore = SceneManager.GetActiveScene().buildIndex - 7;
-                if (currentHighScore > previousHighScore)
-                {
-                    PlayerPrefs.SetInt("HighScore", currentHighScore);
-                    PlayerPrefs.Save();
-
-                    IMG.SetActive(true);
-                    Invoke("wait", 300f);
+                hasHappened = true;
 
 
-                    hasHappened = true; 
 
 
-                    
-
-                }
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
