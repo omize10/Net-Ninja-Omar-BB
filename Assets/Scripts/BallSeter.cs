@@ -17,7 +17,7 @@ public class BallSeter : MonoBehaviour
     void Start()
     {
 
-        HM2 = GameObject.Find("ball").GetComponent<HoopManger2>();
+        HM2 = GameObject.Find("WorkingBall").GetComponent<HoopManger2>();
         //buttons = GameObject.FindGameObjectsWithTag("EquipArry");
         //amountOfBallsUnlocked += 1;
         

@@ -763,6 +763,7 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   IMG: {fileID: 0}
   hoopsRequired: 3
+  currentScore: 0
   hasHappened: 0
 --- !u!4 &581066000
 Transform:
@@ -1562,6 +1563,7 @@ GameObject:
   - component: {fileID: 1248944315}
   - component: {fileID: 1248944314}
   - component: {fileID: 1248944317}
+  - component: {fileID: 1248944318}
   m_Layer: 0
   m_Name: Hoop (1)
   m_TagString: Hoop
@@ -1680,6 +1682,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773dd8cdefb08cf458450ea38ab3bcaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1248944318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248944312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f48d1de1da42b4d84cf076518b91c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 708814811}
+  scoreCount: 0
 --- !u!1 &1256175745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2179,6 +2195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1581579101}
   - component: {fileID: 1581579100}
+  - component: {fileID: 1581579102}
   m_Layer: 0
   m_Name: Score Colldier
   m_TagString: Score
@@ -2227,6 +2244,20 @@ Transform:
   m_Father: {fileID: 1589592689}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1581579102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581579099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f48d1de1da42b4d84cf076518b91c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 708814811}
+  scoreCount: 0
 --- !u!1 &1589592687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2606,27 +2637,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4001248, y: 0.21753034}
   m_EdgeRadius: 0
---- !u!1 &1709801027 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4600918172806453035, guid: 9700866b91661454da19a79db0a52230, type: 3}
-  m_PrefabInstance: {fileID: 1534007618}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1709801028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709801027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fe35c29b1935ff4eb5ec6b97bd24344, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 708814811}
-  IMG: {fileID: 164020017}
-  hoopsRequired: 2
-  hasHappened: 1
 --- !u!50 &1709801030 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 4600918172806453034, guid: 9700866b91661454da19a79db0a52230, type: 3}
