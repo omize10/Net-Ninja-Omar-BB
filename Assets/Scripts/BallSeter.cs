@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class BallSeter : MonoBehaviour
 {
     public GameObject[] buttons;
@@ -12,45 +11,29 @@ public class BallSeter : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(gameObject);
     }
+
     void Start()
     {
-
         HM2 = GameObject.Find("WorkingBall").GetComponent<HoopManger2>();
-        //buttons = GameObject.FindGameObjectsWithTag("EquipArry");
-        //amountOfBallsUnlocked += 1;
-        
 
         if (HM2.hasHappened)
         {
-            amountOfBallsUnlocked += 1;
-            if (amountOfBallsUnlocked != 0)
+            amountOfBallsUnlocked++; // Increment unlocked ball count
+            if (amountOfBallsUnlocked <= buttons.Length)
             {
-                print("this has happened");
-
-
-                print(amountOfBallsUnlocked);
-                for (int i = 0; i < amountOfBallsUnlocked; i++)
-                {
-                    print("working");
-                    //setcurrent button to atctive( number that is set to amountOfBallsUnlocked)
-                    currentButton = buttons[0];
-                    currentButton.SetActive(true);
-                }
-                //GameObject currentButton = buttons[amountOfBallsUnlocked];
-                //currentButton.SetActive(true);  
-                print("Almost done");
-                HM2.hasHappened = false;
+                // Activate corresponding button
+                buttons[amountOfBallsUnlocked - 1].SetActive(true);
             }
+
+            HM2.hasHappened = false; // Reset flag
         }
     }
-
 
     void Update()
     {
         
     }
-
-
 }
+

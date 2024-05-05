@@ -762,6 +762,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
   IMG: {fileID: 0}
+  ballSpriteRenderer: {fileID: 0}
+  ballSprites: []
   hoopsRequired: 3
   currentScore: 0
   hasHappened: 0
@@ -1197,6 +1199,10 @@ PrefabInstance:
     - target: {fileID: 4600918172806453035, guid: 9700866b91661454da19a79db0a52230, type: 3}
       propertyPath: m_Name
       value: WorkingBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600918172806453035, guid: 9700866b91661454da19a79db0a52230, type: 3}
+      propertyPath: m_TagString
+      value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 4600918172806453039, guid: 9700866b91661454da19a79db0a52230, type: 3}
       propertyPath: m_RootOrder
@@ -1856,7 +1862,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1981,7 +1986,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0

@@ -3,68 +3,62 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class HoopManger2 : MonoBehaviour
-{ // ******* every time you beat your highscore you unlcok new backgound *******!!!!!!!!!!!!!!
+{
     public Text scoreText;
     public GameObject IMG;
+    public SpriteRenderer ballSpriteRenderer;
+    //public Sprite[] ballSprites;
 
     public int hoopsRequired = 2;
-    //public GameObject hoop;
     public int currentScore = 0;
     private int previousHighScore;
-    
-    
     public bool hasHappened;
-
-    void wait()
-    {
-        IMG.SetActive(false);
-    }
 
     private void Awake()
     {
-        // if (// not in destroy ball scene)
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
     {
-        //PlayerPrefs.SetInt("HighScore", 0);//DELETE THIS LINE AFTER RESETTING HIGH SCORE
         previousHighScore = PlayerPrefs.GetInt("HighScore", 0);
-
         scoreText = GameObject.Find("Score Text").GetComponent<Text>();
+
+        GameObject ball = GameObject.FindGameObjectWithTag("Ball");
+        if (ball != null)
+        {
+            ballSpriteRenderer = ball.GetComponent<SpriteRenderer>();
+        }
     }
 
     private void Update()
     {
         scoreText.text = currentScore.ToString();
         highscoreUpdate();
-        
     }
 
-   public void highscoreUpdate()
+    public void highscoreUpdate()
     {
-        //Destroy(collision.gameObject); // Destroy the hoop itself
-       
         if (currentScore >= hoopsRequired)
         {
-
-            print("watch");
             int currentHighScore = SceneManager.GetActiveScene().buildIndex - 7;
             if (currentHighScore > previousHighScore)
             {
                 PlayerPrefs.SetInt("HighScore", currentHighScore);
                 PlayerPrefs.Save();
 
-                IMG.SetActive(true);
-                Invoke("wait", 300f);
 
+                //if (currentHighScore < ballSprites.Length)
+                //{
+                  //  ballSpriteRenderer.sprite = ballSprites[currentHighScore];
+               // }
+
+                IMG.SetActive(true);
+                Invoke("Wait", 3f);
 
                 hasHappened = true;
-
-
-
-
             }
+
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
@@ -72,10 +66,20 @@ public class HoopManger2 : MonoBehaviour
     public void addscore()
     {
         currentScore++;
-       
+    }
+
+    void Wait()
+    {
+        IMG.SetActive(false);
+    }
+
+    // Method to change the ball's image
+    public void ChangeBallImage(Sprite newImage)
+    {
+        if (ballSpriteRenderer != null)
+        {
+            ballSpriteRenderer.sprite = newImage;
+        }
     }
 }
-
-
-
 
