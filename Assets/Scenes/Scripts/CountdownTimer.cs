@@ -67,6 +67,8 @@ public class CountdownTimer : MonoBehaviour
             Debug.Log("Time's up!");
 
             // Load a new scene (replace "YourSceneName" with your actual scene name)
+            //GameObject kill = GameObject.Find("WorkingBall");
+          //  Destroy(kill);
             SceneManager.LoadScene("Gameover");
         }
     }
