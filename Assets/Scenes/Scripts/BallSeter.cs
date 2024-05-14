@@ -11,24 +11,32 @@ public class BallSeter : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     void Start()
     {
+        int hiScore = PlayerPrefs.GetInt("HighScore", 0);
+        Debug.Log(hiScore);
+        for(int i = 0; i < hiScore; i++)
+        {
+            buttons[i].SetActive(true);
+        }
+
         HM2 = GameObject.Find("WorkingBall").GetComponent<HoopManger2>();
 
-        if (HM2.hasHappened)
-        {
-            amountOfBallsUnlocked++; // Increment unlocked ball count
-            if (amountOfBallsUnlocked <= buttons.Length)
-            {
-                // Activate corresponding button
-                buttons[amountOfBallsUnlocked - 1].SetActive(true);
-            }
 
-            HM2.hasHappened = false; // Reset flag
-        }
+        //if (HM2.hasHappened)
+        //{
+        //    amountOfBallsUnlocked++; // Increment unlocked ball count
+        //    if (amountOfBallsUnlocked <= buttons.Length)
+        //    {
+        //        // Activate corresponding button
+        //        buttons[amountOfBallsUnlocked - 1].SetActive(true);
+        //    }
+
+        //    HM2.hasHappened = false; // Reset flag
+       // }
     }
 
     void Update()

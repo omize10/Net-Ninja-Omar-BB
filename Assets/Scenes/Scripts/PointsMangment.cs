@@ -18,6 +18,7 @@ public class PointsMangment : MonoBehaviour
     {
         // Load the previous high score from PlayerPrefs
         previousHighScore = PlayerPrefs.GetInt("HighScore", 0);
+        Debug.Log(previousHighScore);
         UpdateHighScoreText();
     }
 
