@@ -17,6 +17,8 @@ public class HoopManger2 : MonoBehaviour
     private int previousHighScore;
     public bool hasHappened;
 
+    public int highScoreTest;
+
     private void Awake()
     {
         if (_instance)
@@ -63,6 +65,7 @@ public class HoopManger2 : MonoBehaviour
             {
                 PlayerPrefs.SetInt("HighScore", currentHighScore);
                 PlayerPrefs.Save();
+                highScoreTest = PlayerPrefs.GetInt("HighScore");
 
 
                 //if (currentHighScore < ballSprites.Length)
@@ -99,6 +102,12 @@ public class HoopManger2 : MonoBehaviour
         {
             ballSpriteRenderer.sprite = newImage;
         }
+    }
+
+    public int GiveScore()
+    {
+        print(PlayerPrefs.GetInt("HighScore"));
+        return PlayerPrefs.GetInt("HighScore");
     }
 }
 
