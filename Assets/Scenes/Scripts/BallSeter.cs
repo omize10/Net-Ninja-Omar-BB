@@ -18,7 +18,7 @@ public class BallSeter : MonoBehaviour
 
     {
         int hiScore = GameObject.Find("WorkingBall").GetComponent<HoopManger2>().highScoreTest;
-        PlayerPrefs.Save();
+        Debug.Log("BALLSETER");
         Debug.Log(hiScore);
 
         for(int i = 0; i < hiScore; i++)

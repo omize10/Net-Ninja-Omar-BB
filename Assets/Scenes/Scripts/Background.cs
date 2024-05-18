@@ -7,6 +7,6 @@ public class Background : MonoBehaviour
     public void ReplayGame()
     {
         // Load the main scene (assuming it's at build index 0)
-        SceneManager.LoadScene("Backgound");
+        SceneManager.LoadScene("YouFan");
     }
 }

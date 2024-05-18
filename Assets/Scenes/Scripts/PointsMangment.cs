@@ -11,26 +11,25 @@ public class PointsMangment : MonoBehaviour
 {
     private int previousHighScore;
     public Text highScoreText;  // Reference to a Text component to display the high score
+    private int test;
    
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         // Load the previous high score from PlayerPrefs
-        previousHighScore = PlayerPrefs.GetInt("HighScore");
-        
-        Debug.Log(previousHighScore);
         UpdateHighScoreText();
-        PlayerPrefs.Save();
     }
 
     public void UpdateHighScoreText()
     {
         // update the score text
-        highScoreText.text = previousHighScore.ToString();
-    }
-    void Update()
-    {
+        //previousHighScore = PlayerPrefs.GetInt("HighScore");
         
+        //for testing purposes
+       // Debug.Log(highscorething);
+        int highscorething = GameObject.Find("WorkingBall").GetComponent<HoopManger2>().highScoreTest;
+
+        highScoreText.text = highscorething.ToString();
     }
 }

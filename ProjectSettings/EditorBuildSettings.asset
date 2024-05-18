@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Instructions.unity
     guid: df85b1f4c6ab9ee45ab637b63871e122
   - enabled: 1
-    path: Assets/Scenes/Backgound.unity
+    path: Assets/Scenes/YouFan.unity
     guid: c24b3f0bd546bb64db872257d4f9e275
   - enabled: 1
     path: Assets/Scenes/LevelUp#1.unity
@@ -27,6 +27,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Level1.unity
     guid: 581437d4621b4fb49b5ec418a223c9ca
   - enabled: 1
-    path: Assets/Scenes/Level1 5.unity
+    path: Assets/Scenes/Level2.unity
     guid: b815baba54460514ca3bce727b818956
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: baa496de331645c46a5fd58b1cc386a7
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 55a34056025733f4abc31149a1d064c3
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 846b7a8b88db8ce469e9c4b1051c3231
+  - enabled: 1
+    path: Assets/Scenes/Level6.unity
+    guid: 1e456d20b4408c34685d8c65cf2af06b
   m_configObjects: {}
