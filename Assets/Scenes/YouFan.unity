@@ -890,6 +890,13 @@ MonoBehaviour:
   buttons:
   - {fileID: 1691852556}
   - {fileID: 1589448434}
+  - {fileID: 21992907}
+  - {fileID: 857945826}
+  - {fileID: 1337208851}
+  - {fileID: 797636914}
+  - {fileID: 1656597493}
+  - {fileID: 2075793465}
+  - {fileID: 1917935404}
   HM2: {fileID: 0}
 --- !u!1 &797636914
 GameObject:
