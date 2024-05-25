@@ -2849,6 +2849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  moveAmmount: 2
 --- !u!1 &1646068679
 GameObject:
   m_ObjectHideFlags: 0
@@ -3000,6 +3001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  moveAmmount: 2
 --- !u!1 &1766686620
 GameObject:
   m_ObjectHideFlags: 0
@@ -3087,7 +3089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7275e13463ccf1d4980f6acb07c62d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoopRequired: 4
+  hoopRequired: 3
   scoreText: {fileID: 708814811}
   IMG: {fileID: 164020017}
 --- !u!4 &1770538106
@@ -3243,6 +3245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
+  moveAmmount: 2
 --- !u!114 &1924127828
 MonoBehaviour:
   m_ObjectHideFlags: 0

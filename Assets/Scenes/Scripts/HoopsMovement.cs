@@ -7,19 +7,21 @@ public class HoopsMovement : MonoBehaviour
 
     public float speed = 2.0f;
     private int direction = 1;
+    public float moveAmmount = 2.0f;
 
-    // Start is called before the first frame update
+
+
     void Start()
     {
         
     }
 
 void Update() {
-    // Move the hoops
+
     transform.Translate(Vector3.right * speed * direction * Time.deltaTime);
 
-    // Check if hoops reach screen edges and change direction
-    if (transform.position.x >= 4.0f || transform.position.x <= -4.0f) {
+
+    if (transform.position.x >= moveAmmount || transform.position.x <= -moveAmmount) {
         direction *= -1;
     }
 }

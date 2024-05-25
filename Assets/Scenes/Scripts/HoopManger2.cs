@@ -56,6 +56,10 @@ public class HoopManger2 : MonoBehaviour
         }
     }
 
+    public void resetCurrentScore() {
+        currentScore = 0;
+    }
+
     public void highscoreUpdate()
     {
         if (currentScore >= hoopsRequired)
