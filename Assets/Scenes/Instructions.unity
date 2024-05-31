@@ -183,7 +183,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_FontSize: 29
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -194,11 +194,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Work In progess incuruction: \n\n1. Go to the home and press play\n2.
-    Darg your finger or mouse on the screen and aim for the hoop \n3. Get the ball
-    into the hoop each hoop before the time is up\n4. See how far you can get without
-    lossing\n5. If you lose you will be sent back to level one or you can go home\n6.
-    Retry and get as far as possbile"
+  m_Text: "\n1. Go to the home and press Play\n2. Drag your finger or mouse on the
+    screen and aim for the hoop\n3. Get the ball into the hoop before the time is
+    up\n4. See how far you can get without losing\n5. If you lose, you will be sent
+    back to level one, or you can go home.\r\n6. Retry and get as far as possible\nReach
+    the end or level 25 to receive a prize\r\n7. Set new high scores for yourself
+    and receive fans\n8. Collect all the fans\n9. Have fun! \U0001F3C0\U0001F389\n\n"
 --- !u!222 &556688356
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -510,6 +511,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0

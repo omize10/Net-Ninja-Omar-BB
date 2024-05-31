@@ -8,7 +8,7 @@ public class RestScoreL1: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.Find("WorkingBall").GetComponent<HoopManger2>();
+        hoopManger2 = GameObject.Find("WorkingBall").GetComponent<HoopManger2>();
         hoopManger2.resetCurrentScore();
     }
 

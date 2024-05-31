@@ -5,9 +5,13 @@ using UnityEngine;
 public class HoopKiller : MonoBehaviour
 {
 
+    public AudioSource WooshSound;
+    public GameObject workingBall;
+
     void Start()
     {
-        
+        WooshSound = GameObject.Find("WorkingBall").GetComponent<AudioSource>();
+        WooshSound.time = 0.2f;
     }
 
 
@@ -21,6 +25,8 @@ public class HoopKiller : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ball"))
         {
+            WooshSound.Play();
+
             Invoke("", 2f);
 
 
