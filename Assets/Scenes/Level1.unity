@@ -1536,7 +1536,7 @@ MonoBehaviour:
     m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 0
     m_MaxSize: 90
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1570,8 +1570,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 96, y: 138}
-  m_SizeDelta: {x: 495.1991, y: 340.821}
+  m_AnchoredPosition: {x: 250, y: 199}
+  m_SizeDelta: {x: 866.766, y: 213.8882}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1248944312
 GameObject:
@@ -1705,6 +1705,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773dd8cdefb08cf458450ea38ab3bcaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WooshSound: {fileID: 0}
+  workingBall: {fileID: 0}
 --- !u!114 &1248944318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1809,7 +1811,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256175745}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -198}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1892,7 +1894,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -2017,7 +2018,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -2471,6 +2471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773dd8cdefb08cf458450ea38ab3bcaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WooshSound: {fileID: 0}
+  workingBall: {fileID: 0}
 --- !u!1 &1589731974
 GameObject:
   m_ObjectHideFlags: 0

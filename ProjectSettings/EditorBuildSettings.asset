@@ -96,6 +96,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Level25TheEnd.unity
     guid: 50a160744583d5e48bd13f4d4c1a2c3b
   - enabled: 1
-    path: Assets/Scenes/YouFan 1.unity
-    guid: f2ff759728a5a4f919dc992296488bfe
+    path: Assets/Scenes/Win.unity
+    guid: 35d5c4af1217bda44bc2e0bf035d90fc
   m_configObjects: {}

@@ -54,6 +54,8 @@ public class HoopManger2 : MonoBehaviour
             scoreText.text = currentScore.ToString();
             highscoreUpdate();
         }
+
+       
     }
 
     public void resetCurrentScore() {
@@ -65,11 +67,15 @@ public class HoopManger2 : MonoBehaviour
         if (currentScore >= hoopsRequired)
         {
             int currentHighScore = SceneManager.GetActiveScene().buildIndex - 5;
+            
+            
+            Invoke("Wait", 7f);
             if (currentHighScore > previousHighScore)
             {
                 PlayerPrefs.SetInt("HighScore", currentHighScore);
                 PlayerPrefs.Save();
                 highScoreTest = PlayerPrefs.GetInt("HighScore");
+
 
 
                 //if (currentHighScore < ballSprites.Length)
