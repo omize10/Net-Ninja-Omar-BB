@@ -19,12 +19,15 @@ public class HoopManger2 : MonoBehaviour
 
     public int highScoreTest;
 
+    public inout inoutScript; // Reference to the Inout script
+
     private void Awake()
     {
         if (_instance)
         {
             Destroy(gameObject);
-        } else
+        }
+        else
         {
             _instance = gameObject;
         }
@@ -39,26 +42,34 @@ public class HoopManger2 : MonoBehaviour
             previousHighScore = PlayerPrefs.GetInt("HighScore", 0);
             scoreText = GameObject.Find("Score Text").GetComponent<Text>();
 
+
             GameObject ball = GameObject.FindGameObjectWithTag("Ball");
             if (ball != null)
             {
                 ballSpriteRenderer = ball.GetComponent<SpriteRenderer>();
             }
         }
+
+       // inoutScript = GameObject.Find("Main Camera").GetComponent<inout>();
+
+        //inoutScript = Camera.main.GetComponent<inout>();
+        if (inoutScript == null)
+        {
+            Debug.LogError("Inout script not found on the main camera.");
+        }
     }
 
     private void Update()
     {
-        if(scoreText != null)
+        if (scoreText != null)
         {
             scoreText.text = currentScore.ToString();
             highscoreUpdate();
         }
-
-       
     }
 
-    public void resetCurrentScore() {
+    public void resetCurrentScore()
+    {
         currentScore = 0;
     }
 
@@ -67,22 +78,13 @@ public class HoopManger2 : MonoBehaviour
         if (currentScore >= hoopsRequired)
         {
             int currentHighScore = SceneManager.GetActiveScene().buildIndex - 5;
-            
-            
+
             Invoke("Wait", 7f);
             if (currentHighScore > previousHighScore)
             {
                 PlayerPrefs.SetInt("HighScore", currentHighScore);
                 PlayerPrefs.Save();
                 highScoreTest = PlayerPrefs.GetInt("HighScore");
-
-
-
-                //if (currentHighScore < ballSprites.Length)
-                //{
-                  //  ballSpriteRenderer.sprite = ballSprites[currentHighScore];
-               // }
-               // }
 
                 IMG.SetActive(true);
                 Invoke("Wait", 3f);
@@ -98,6 +100,13 @@ public class HoopManger2 : MonoBehaviour
     public void addscore()
     {
         currentScore++;
+        Debug.Log(inoutScript);
+        inoutScript.ZoomInAndOut(20f, 2f); // Adjust zoom amount and speed as needed
+        if (inoutScript != null)
+        {
+            Debug.Log("1");
+            inoutScript.ZoomInAndOut(20f, 2f); // Adjust zoom amount and speed as needed
+        }
     }
 
     void Wait()
@@ -120,4 +129,3 @@ public class HoopManger2 : MonoBehaviour
         return PlayerPrefs.GetInt("HighScore");
     }
 }
-

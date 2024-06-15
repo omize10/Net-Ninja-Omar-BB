@@ -14,7 +14,8 @@ public class HRMagemnt : MonoBehaviour
         workball = GameObject.Find("WorkingBall").GetComponent<HoopManger2>();
         workball.hoopsRequired = hoopRequired;
         workball.scoreText = scoreText;
-        workball.IMG = IMG;     
+        workball.IMG = IMG;  
+        workball.inoutScript = GameObject.Find("Main Camera").GetComponent<inout>();
     }
 
     

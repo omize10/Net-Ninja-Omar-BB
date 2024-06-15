@@ -14,8 +14,6 @@ public class score : MonoBehaviour
         if (collision.gameObject.CompareTag("ball")) // Check if the collided object has the "ball" tag
         {
             GameObject.Find("WorkingBall").GetComponent<HoopManger2>().addscore();
-
-
         }
     }
 }
