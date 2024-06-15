@@ -20,6 +20,7 @@ public class HoopManger2 : MonoBehaviour
     public int highScoreTest;
 
     public inout inoutScript; // Reference to the Inout script
+    public SpriteRenderer backgounds;
 
     private void Awake()
     {
@@ -37,6 +38,8 @@ public class HoopManger2 : MonoBehaviour
 
     private void Start()
     {
+        backgounds = GameObject.Find("BackGound").GetComponent<SpriteRenderer>();
+
         if (scoreText != null)
         {
             previousHighScore = PlayerPrefs.GetInt("HighScore", 0);
@@ -58,7 +61,10 @@ public class HoopManger2 : MonoBehaviour
             Debug.LogError("Inout script not found on the main camera.");
         }
     }
-
+    public void UpdateBackgound(Sprite sprite)
+    {
+        backgounds.sprite = sprite;
+    }
     private void Update()
     {
         if (scoreText != null)
