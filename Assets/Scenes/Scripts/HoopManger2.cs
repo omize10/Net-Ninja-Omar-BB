@@ -16,11 +16,14 @@ public class HoopManger2 : MonoBehaviour
     public int currentScore = 0;
     private int previousHighScore;
     public bool hasHappened;
+    private Sprite UB;
 
     public int highScoreTest;
 
     public inout inoutScript; // Reference to the Inout script
     public SpriteRenderer backgounds;
+
+    
 
     private void Awake()
     {
@@ -33,12 +36,14 @@ public class HoopManger2 : MonoBehaviour
             _instance = gameObject;
         }
 
+        
         DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
     {
-        backgounds = GameObject.Find("BackGound").GetComponent<SpriteRenderer>();
+       
+        //print("awak");
 
         if (scoreText != null)
         {
@@ -64,14 +69,19 @@ public class HoopManger2 : MonoBehaviour
     public void UpdateBackgound(Sprite sprite)
     {
         backgounds.sprite = sprite;
+        UB = sprite;
     }
     private void Update()
     {
+        
+        backgounds = GameObject.Find("BackGound").GetComponent<SpriteRenderer>();
         if (scoreText != null)
         {
             scoreText.text = currentScore.ToString();
             highscoreUpdate();
         }
+
+        backgounds.sprite = UB;
     }
 
     public void resetCurrentScore()

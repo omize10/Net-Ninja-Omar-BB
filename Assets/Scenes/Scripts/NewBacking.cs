@@ -16,7 +16,7 @@ public class NewBacking : MonoBehaviour
         HM2 = GameObject.Find("WorkingBall");
         var script = HM2.GetComponent<HoopManger2>();
         DC = GameObject.Find("DragController");
-
+       
         Debug.Log("sart");
     }
 
@@ -42,7 +42,22 @@ public class NewBacking : MonoBehaviour
 
     public void Eqqui()
     {
+        Debug.Log("EqquiWorking");
         var script = HM2.GetComponent<HoopManger2>();
         script.UpdateBackgound(NBSprit);
+        Time.timeScale = 1.0f;
+        OnBack.SetActive(false);
+        DC.SetActive(true);
+        Destroy(gameObject);
+    }
+
+    public void End()
+    {
+        Debug.Log("EndSyetemwoks");
+        Time.timeScale = 1.0f;
+        OnBack.SetActive(false);
+        DC.SetActive(true);
+        Destroy(gameObject);
+        // try to remove gameobject from in gameobject or may have to do form outside gameobject
     }
 }

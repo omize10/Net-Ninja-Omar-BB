@@ -337,6 +337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773dd8cdefb08cf458450ea38ab3bcaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WooshSound: {fileID: 0}
+  workingBall: {fileID: 0}
 --- !u!61 &88381356
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -449,6 +451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  moveAmmount: 2
 --- !u!1 &164020017
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,7 +720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &384137387
 Transform:
   m_ObjectHideFlags: 0
@@ -1126,6 +1129,8 @@ MonoBehaviour:
   currentScore: 0
   hasHappened: 0
   highScoreTest: 0
+  inoutScript: {fileID: 0}
+  backgounds: {fileID: 0}
 --- !u!4 &581066000
 Transform:
   m_ObjectHideFlags: 0
@@ -1841,7 +1846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1237190970
 Transform:
   m_ObjectHideFlags: 0
@@ -2167,6 +2172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773dd8cdefb08cf458450ea38ab3bcaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WooshSound: {fileID: 0}
+  workingBall: {fileID: 0}
 --- !u!114 &1248944318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2192,6 +2199,7 @@ GameObject:
   - component: {fileID: 1256175748}
   - component: {fileID: 1256175747}
   - component: {fileID: 1256175746}
+  - component: {fileID: 1256175749}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2265,6 +2273,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1256175749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256175745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc30b02ac19be7498ef5758d641462e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1413056387
 GameObject:
   m_ObjectHideFlags: 0
@@ -2399,7 +2419,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -2655,7 +2674,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -2678,7 +2696,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1484835581
 Transform:
   m_ObjectHideFlags: 0
@@ -3178,6 +3196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773dd8cdefb08cf458450ea38ab3bcaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WooshSound: {fileID: 0}
+  workingBall: {fileID: 0}
 --- !u!1 &1589731974
 GameObject:
   m_ObjectHideFlags: 0
@@ -3370,7 +3390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1646068680
 Transform:
   m_ObjectHideFlags: 0
@@ -3789,6 +3809,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773dd8cdefb08cf458450ea38ab3bcaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WooshSound: {fileID: 0}
+  workingBall: {fileID: 0}
 --- !u!61 &1962222769
 BoxCollider2D:
   m_ObjectHideFlags: 0
