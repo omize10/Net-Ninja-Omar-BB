@@ -16,7 +16,7 @@ public class NewBacking : MonoBehaviour
         HM2 = GameObject.Find("WorkingBall");
         var script = HM2.GetComponent<HoopManger2>();
         DC = GameObject.Find("DragController");
-       
+        
         Debug.Log("sart");
     }
 
