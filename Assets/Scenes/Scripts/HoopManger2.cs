@@ -16,12 +16,12 @@ public class HoopManger2 : MonoBehaviour
     public int currentScore = 0;
     private int previousHighScore;
     public bool hasHappened;
-    private Sprite UB;
+  //  private Sprite UB;
 
     public int highScoreTest;
 
     public inout inoutScript; // Reference to the Inout script
-    public SpriteRenderer backgounds;
+    //public SpriteRenderer backgounds;
 
     
 
@@ -66,22 +66,22 @@ public class HoopManger2 : MonoBehaviour
             Debug.LogError("Inout script not found on the main camera.");
         }
     }
-    public void UpdateBackgound(Sprite sprite)
+   /* public void UpdateBackgound(Sprite sprite)
     {
         backgounds.sprite = sprite;
         UB = sprite;
-    }
+    } */
     private void Update()
     {
         
-        backgounds = GameObject.Find("BackGound").GetComponent<SpriteRenderer>();
+        //backgounds = GameObject.Find("BackGound").GetComponent<SpriteRenderer>();
         if (scoreText != null)
         {
             scoreText.text = currentScore.ToString();
             highscoreUpdate();
         }
 
-        backgounds.sprite = UB;
+       // backgounds.sprite = UB;
     }
 
     public void resetCurrentScore()

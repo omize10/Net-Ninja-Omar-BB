@@ -183,7 +183,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 29
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -199,8 +199,8 @@ MonoBehaviour:
     up\n4. See how far you can get without losing\n5. If you lose, you will be sent
     back to level one, or you can go home.\r\n6. Retry and get as far as possible\nReach
     the end or level 25 to receive a prize\r\n7. Set new high scores for yourself
-    and receive fans\n8. Collect all the fans\n9. Collect all the background you
-    see\n10. Have fun! \U0001F3C0\U0001F389\n\n"
+    and receive fans\n8. Collect all the fans\n9. Rember the Background ends where
+    the main colour scheme stops\n10. Have fun! \U0001F3C0\U0001F389\n\n"
 --- !u!222 &556688356
 CanvasRenderer:
   m_ObjectHideFlags: 0
