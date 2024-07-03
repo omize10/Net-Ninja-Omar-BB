@@ -399,6 +399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WooshSound: {fileID: 0}
   workingBall: {fileID: 0}
+  Complent: {fileID: 0}
 --- !u!61 &307176621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -999,7 +1000,6 @@ MonoBehaviour:
   hasHappened: 0
   highScoreTest: 0
   inoutScript: {fileID: 0}
-  backgounds: {fileID: 0}
 --- !u!4 &581066000
 Transform:
   m_ObjectHideFlags: 0
@@ -2601,11 +2601,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4600918172806453039, guid: 9700866b91661454da19a79db0a52230, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.58
+      value: 1.76
       objectReference: {fileID: 0}
     - target: {fileID: 4600918172806453039, guid: 9700866b91661454da19a79db0a52230, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.89
+      value: 1.98
       objectReference: {fileID: 0}
     - target: {fileID: 4600918172806453039, guid: 9700866b91661454da19a79db0a52230, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2754,6 +2754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WooshSound: {fileID: 0}
   workingBall: {fileID: 0}
+  Complent: {fileID: 0}
 --- !u!61 &1618116514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3277,6 +3278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WooshSound: {fileID: 0}
   workingBall: {fileID: 0}
+  Complent: {fileID: 0}
 --- !u!61 &1924127829
 BoxCollider2D:
   m_ObjectHideFlags: 0

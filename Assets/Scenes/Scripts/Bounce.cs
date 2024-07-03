@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class Bounce : MonoBehaviour
 {
-
+    public float ypos;
     void Start()
     {
-
+        ypos = 18;
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class Bounce : MonoBehaviour
             if (rb != null)
             {
                 Debug.Log("NowW");
-                rb.AddForce(new Vector2(0, 18), ForceMode2D.Impulse);
+                rb.AddForce(new Vector2(0, ypos), ForceMode2D.Impulse);
             }
         }
     }
