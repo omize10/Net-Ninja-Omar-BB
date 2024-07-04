@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,7 +52,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -127,18 +127,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
+    sprites:
+    - serializedVersion: 2
+      name: Copy of Net Ninjas Logo + Sart Backgound (1) 1_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 616
+        width: 238
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cccd7f06a6f5048bda6f0d4b55a50a
+      internalID: -1315654035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: 16, y: 283}
+      - {x: -202, y: 283}
+      - {x: -215, y: 272}
+      - {x: -215, y: 231}
+      - {x: -202, y: 214}
+      - {x: 10, y: 214}
+      - {x: 23, y: 218}
+      - {x: 27, y: 234}
+      - {x: 27, y: 271}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Copy of Net Ninjas Logo + Sart Backgound (1) 1_0: -1315654035
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

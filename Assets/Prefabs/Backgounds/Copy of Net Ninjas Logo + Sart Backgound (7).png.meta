@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c190e5033469a3c4e8277db3e3277f64
+guid: 18ebb9420fb5e4047955fd5d986f5c25
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,11 +48,11 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 204, y: 618, z: 193, w: 116}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Copy of Net Ninjas Logo + Sart Backgound (4)_0
+      name: Copy of Net Ninjas Logo + Sart Backgound (7)_0
       rect:
         serializedVersion: 2
-        x: 205
-        y: 616
-        width: 201
-        height: 70
+        x: 135
+        y: 506
+        width: 237
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,31 +119,24 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8194a24d9ccb9754d9e33b4f4544941d
-      internalID: 740650740
+      spriteID: 6128ae6615eef9941a8eca8a22966ccb
+      internalID: -1342211688
       vertices: []
       indices: 
       edges: []
       weights: []
-    outline:
-    - - {x: -79, y: 288}
-      - {x: -97, y: 285}
-      - {x: -97, y: 214}
-      - {x: 88, y: 214}
-      - {x: 108, y: 216}
-      - {x: 108, y: 282}
-      - {x: 105, y: 288}
+    outline: []
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Copy of Net Ninjas Logo + Sart Backgound (4)_0: 740650740
+      Copy of Net Ninjas Logo + Sart Backgound (7)_0: -1342211688
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
