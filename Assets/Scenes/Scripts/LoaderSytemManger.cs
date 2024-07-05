@@ -10,44 +10,73 @@ public class LoaderSytemManger : MonoBehaviour
     public GameObject LFifteen;
     public GameObject Ltwemty;
 
+
     void Start()
     {
         HM2 = GameObject.Find("WorkingBall").GetComponent<HoopManger2>();
     }
 
+  private void Awake()
+    {
+        
+        int hiiScore = GameObject.Find("WorkingBall").GetComponent<HoopManger2>().highScoreTest;
+        Debug.Log(hiiScore);
+        //LevelTen();
+        //LevelFifteen();
+        //LevelTwenty();
+    }
 
     void Update()
     {
-        
+        int hiiScore = GameObject.Find("WorkingBall").GetComponent<HoopManger2>().highScoreTest;
+
+
+        if (hiiScore >= 8 )//&& hiiScore < 12)
+        {
+            Lten.SetActive(true);
+            
+        }
+        if (hiiScore >= 13)// && hiiScore < 16)
+        {
+            LFifteen.SetActive(true);
+          
+        }
+        if (hiiScore >= 17 )//&& hiiScore < 25)
+        {
+            Ltwemty.SetActive(true);
+          
+        }
+
     }
 
      public void LevelTen()
     {
-        int currentHighScore = PlayerPrefs.GetInt("HighScore", 0);
-        if (currentHighScore >= 11 && currentHighScore < 16)
+        int hiiScore = GameObject.Find("WorkingBall").GetComponent<HoopManger2>().highScoreTest;
+        if (hiiScore >= 8 )//&& hiiScore < 12)
         {
-            Lten.SetActive(true);
+            //Lten.SetActive(true);
             SceneManager.LoadScene("Level10");
         }
+
     }
 
     public void LevelFifteen()
     {
 
-        int currentHighScore = PlayerPrefs.GetInt("HighScore", 0);
-        if (currentHighScore >= 16 && currentHighScore < 21)
+        int hiiScore = GameObject.Find("WorkingBall").GetComponent<HoopManger2>().highScoreTest;
+        if (hiiScore >= 13)// && hiiScore < 16)
         {
-            LFifteen.SetActive(true);
+          //  LFifteen.SetActive(true);
             SceneManager.LoadScene("Level15");
         }
 
     }
         public void LevelTwenty()
         {
-            int currentHighScore = PlayerPrefs.GetInt("HighScore", 0);
-            if (currentHighScore >= 21 && currentHighScore < 25)
+        int hiiScore = GameObject.Find("WorkingBall").GetComponent<HoopManger2>().highScoreTest;
+        if (hiiScore >= 17)// && hiiScore < 25)
             {
-                Ltwemty.SetActive(true);
+                //Ltwemty.SetActive(true);
                 SceneManager.LoadScene("Level20");
             }
         }

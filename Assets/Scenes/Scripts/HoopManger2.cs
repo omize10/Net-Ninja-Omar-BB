@@ -73,7 +73,10 @@ public class HoopManger2 : MonoBehaviour
     } */
     private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            currentScore = hoopsRequired;
+        }
         //backgounds = GameObject.Find("BackGound").GetComponent<SpriteRenderer>();
         if (scoreText != null)
         {
@@ -93,7 +96,7 @@ public class HoopManger2 : MonoBehaviour
     {
         if (currentScore >= hoopsRequired)
         {
-            int currentHighScore = SceneManager.GetActiveScene().buildIndex - 5;
+            int currentHighScore = SceneManager.GetActiveScene().buildIndex - 4;
 
             Invoke("Wait", 7f);
             if (currentHighScore > previousHighScore)
@@ -144,4 +147,11 @@ public class HoopManger2 : MonoBehaviour
         print(PlayerPrefs.GetInt("HighScore"));
         return PlayerPrefs.GetInt("HighScore");
     }
+
+    public void skiper()
+    {
+        
+    }
+
+
 }
