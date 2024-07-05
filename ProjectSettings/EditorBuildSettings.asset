@@ -98,4 +98,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 35d5c4af1217bda44bc2e0bf035d90fc
+  - enabled: 1
+    path: Assets/Scenes/Checkpointloader.unity
+    guid: d561eeb5b4b7e6844afd7d14db7928e3
   m_configObjects: {}
