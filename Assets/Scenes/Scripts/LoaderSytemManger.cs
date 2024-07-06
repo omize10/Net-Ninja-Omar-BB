@@ -31,17 +31,17 @@ public class LoaderSytemManger : MonoBehaviour
         int hiiScore = GameObject.Find("WorkingBall").GetComponent<HoopManger2>().highScoreTest;
 
 
-        if (hiiScore >= 8 )//&& hiiScore < 12)
+        if (hiiScore >= 10 )//&& hiiScore < 12)
         {
             Lten.SetActive(true);
             
         }
-        if (hiiScore >= 13)// && hiiScore < 16)
+        if (hiiScore >= 15)// && hiiScore < 16)
         {
             LFifteen.SetActive(true);
           
         }
-        if (hiiScore >= 17 )//&& hiiScore < 25)
+        if (hiiScore >= 20 )//&& hiiScore < 25)
         {
             Ltwemty.SetActive(true);
           
@@ -52,7 +52,7 @@ public class LoaderSytemManger : MonoBehaviour
      public void LevelTen()
     {
         int hiiScore = GameObject.Find("WorkingBall").GetComponent<HoopManger2>().highScoreTest;
-        if (hiiScore >= 8 )//&& hiiScore < 12)
+        if (hiiScore >= 10 )//&& hiiScore < 12)
         {
             //Lten.SetActive(true);
             SceneManager.LoadScene("Level10");
@@ -64,7 +64,7 @@ public class LoaderSytemManger : MonoBehaviour
     {
 
         int hiiScore = GameObject.Find("WorkingBall").GetComponent<HoopManger2>().highScoreTest;
-        if (hiiScore >= 13)// && hiiScore < 16)
+        if (hiiScore >= 15)// && hiiScore < 16)
         {
           //  LFifteen.SetActive(true);
             SceneManager.LoadScene("Level15");
@@ -74,7 +74,7 @@ public class LoaderSytemManger : MonoBehaviour
         public void LevelTwenty()
         {
         int hiiScore = GameObject.Find("WorkingBall").GetComponent<HoopManger2>().highScoreTest;
-        if (hiiScore >= 17)// && hiiScore < 25)
+        if (hiiScore >= 20)// && hiiScore < 25)
             {
                 //Ltwemty.SetActive(true);
                 SceneManager.LoadScene("Level20");
