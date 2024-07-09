@@ -19,8 +19,9 @@ public class IBack : MonoBehaviour
 
     public void Keep()
     {
-        Conl.SetActive(false);
         Time.timeScale = 1;
+        Conl.SetActive(false);
+        
     }
     public void Backbutton()
     {
