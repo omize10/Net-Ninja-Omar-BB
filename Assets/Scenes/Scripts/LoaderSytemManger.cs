@@ -85,6 +85,11 @@ public class LoaderSytemManger : MonoBehaviour
             SceneManager.LoadScene("Level1");
         }
 
+    public void Creidts()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     }
 
 
